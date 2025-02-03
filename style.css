@@ -227,7 +227,9 @@ color: #9197B3;
 }
 
 .menu {
-    display: flex;
+
+        position: absolute; /* Faz com que o menu fique posicionado em relação ao body ou a um container posicionado */
+        display: flex;
     flex-direction: column;
     margin-left: 50px;
     gap: 30px;
@@ -235,7 +237,11 @@ color: #9197B3;
 height: 1198px;
 position: relative;
 opacity: 0px;
-background-color: white;
+background-color: rgb(255, 255, 255);
+        background-color: #ffffff; /* Fundo branco */
+        z-index: 100; /* Garante que fique sobre os outros elementos */
+       
+        opacity: 100;
 }
 
 .che {
@@ -472,16 +478,32 @@ color: #000000;
 
 }
 
-.direita {
-    max-width: 1134px;
-    max-width: 1198px;
-    background: rgb(250, 251, 255);
 
-}
+.tudo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;        
+  }
+  
+
+  .direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1;           
+background-color: rgb(250, 251, 255);
+  }
+  
+
+
+  
+
 .p {
     position: relative;
     display: flex;
     align-items: center;
+    margin-left: auto;
+  justify-content: center;
 }
 
 .pesquis {
@@ -506,25 +528,33 @@ color: #000000;
     max-width: 968px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+   
 }
 
+.pes, .pesquis {
+    margin-left: 0;
+}
 
-.tudo {
-    display: flex;
-    align-items: center;
+.he {
+   margin-right:550px;
+   display: flex;
+   align-items: center;
+   white-space: nowrap;
 }
 
 .membros {
     width: 968px;
-height: 151px;
-top: 117px;
-left: 377px;
-gap: 0px;
-opacity: 0px;
-border-width: 0px, 0px, 0px, 0px;
-border-style: solid;
-border-color: #F0F0F0;
+    height: 151px;
+    top: 117px;
+    left: 377px;
+    gap: 0px;
+    border-radius: 30px;
+    opacity: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px 0px #E2ECF980;
+display: flex;
+align-items: center;
+justify-content: space-around;
 }
 
 .grupo1 {
@@ -565,7 +595,7 @@ text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 color: #ACACAC;
-
+margin-bottom: -20px;
 }
 
 .bruh {
@@ -602,11 +632,16 @@ letter-spacing: -0.01em;
 text-align: left;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
+margin-top: -20px;
+}
 
+.arrow {
+    margin-top: -30px;
 }
 
 .month span {
     color: #00AC4F;
+   
 }
 
 .aaa {
@@ -618,4 +653,267 @@ text-decoration-skip-ink: none;
     display: flex;
     flex-direction: column;
 
+}
+
+.mont span {
+    color: #D0004B;
+}
+
+.mont {
+        width: 89px;
+    height: 18px;
+    top: 214px;
+    left: 554px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: -20px;
+}
+
+.nossa {
+    display: flex;
+    align-items: center;
+    
+}
+
+.noss {
+    width: 26px;
+height: 26px;
+border: 1.3px;
+opacity: 0px;
+border: 1.3px solid #FFFFFF;
+margin-top: -20px;
+}
+
+
+table { 
+    border-collapse: separate;
+    border-spacing: 0 20px;
+    width: 100%;
+
+      
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+table, th, td {
+    border: none;
+    padding: 10px;
+    text-align: left;
+}
+
+input, select {
+    border: none;
+    padding: 8px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+
+th, td {
+    font-family: 'Poppins';
+}
+
+.as {
+    width: 155px;
+height: 33px;
+top: 338px;
+left: 415px;
+gap: 0px;
+opacity: 0px;
+font-family: 'Poppins';
+font-size: 22px;
+font-weight: 600;
+line-height: 33px;
+letter-spacing: -0.01em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color:#000000;
+margin-left: 20px;
+}
+
+.ad {
+    width: 111px;
+height: 21px;
+top: 378px;
+left: 415px;
+gap: 0px;
+opacity: 0px;
+font-family: 'Poppins';
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: -0.01em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color: #16C098;
+text-decoration: none;
+margin-left: 20px;
+}
+
+.ap {
+    width: 154px;
+    height: 38px;
+    top: 352px;
+    left: 1147px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    opacity: 0px;
+    background: white;
+    font-family: 'Poppins';
+}
+.ag {
+    background-color: white;
+    margin-left: -80px;
+    margin-right: 50px;
+}
+.aw {
+    display: flex;
+    align-items: center;
+}
+
+.caixona {
+    width: 968px;
+height: 812px;
+top: 308px;
+left: 377px;
+gap: 0px;
+border-radius: 30px;
+opacity: 0px;
+background: #FFFFFF;
+box-shadow: 0px 10px 60px 0px #E2ECF980;
+
+margin-top: 100px;
+}
+
+.acabaaa {
+    display: flex;
+    flex-direction: column;
+}
+
+.acabaa {
+    display: flex;
+    align-items: center;
+}
+
+.button-active {
+    width: 80px;
+    height: 29px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    border: 1px solid #00B087;
+    background-color: #16C09861;
+    color:  #008767;
+
+
+}
+
+.button-inactive {
+    width: 80px;
+    height: 29px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background: #FFC5C5;
+    border: 1px solid #DF0404;
+    color: #DF0404;
+    
+}
+
+.tr-header {
+    width: 863px;
+    height: 21px;
+    gap: 0px;
+    color: #B5B7C0;
+    background-color: white;
+}
+
+.tbody tr {
+ border-bottom: 1px solid #EEEEEE;
+
+}
+
+.⨻ {
+    width: 243px;
+height: 21px;
+top: 1058px;
+left: 415px;
+gap: 0px;
+opacity: 0px;
+font-family: 'Poppins';
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: -0.01em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+color:  #B5B7C0;
+
+}
+
+.⫷⫸ {
+    width: 25px;
+height: 24px;
+top: 1056px;
+left: 1109px;
+
+gap: 10px;
+border-radius: 4px;
+border: 1px;
+opacity: 0px;
+background: #F5F5F5;
+border: 1px solid #EEEEEE;
+text-decoration: none;
+color: #404B52;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.⫷ {
+    width: 25px;
+height: 24px;
+top: 1056px;
+left: 1109px;
+
+gap: 10px;
+border-radius: 4px;
+border: 1px;
+opacity: 0px;
+background: #5932EA;
+border: 1px solid #5932EA;
+text-decoration: none;
+color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.⫇⫈ {
+   display: flex;
+   justify-content: space-around;
+
+}
+
+.⩽⪖ {
+display: flex;
+align-items: center;
+}
+
+.vao {
+    display: flex;
+    align-items: flex-end;
+    margin-left: auto;
 }
